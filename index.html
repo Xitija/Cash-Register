@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Cash Register</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Cash Register 🤑</h1>
+        <p class="description">
+            Enter the <span>Bill amount</span> and cash given by the customer and 
+            know the number of notes to return
+        </p>
+        <label for="bill-amount">Bill Amount:</label>
+        <input id="bill-amount" type="number" />
+        <button id="next-button">Next</button>
+        <div class="cash-collector">
+            <label for="cash-given">Cash Given:</label>
+            <input id="cash-given" type="number" />
+        </div>
+        <button id="calculate-button">Calculate</button>
+        <p class="msg" id="message"></p>
+        <div class="pay-online" >
+            <a class="link" href="online.html">Pay Online 📲</a>
+        </div>
+        
+        <table class="change-table">
+            <caption>Return Change</caption>
+            <tr>
+            <th>Note Denomination</th>
+                <td>2000 💶</td>
+                <td>500 💵</td>
+                <td>100 💷 </td>
+                <td>20 💴</td>
+                <td>10 🪙</td>
+                <td>5 🪙</td>
+                <td>1 🪙</td>
+            </tr>  
+            <tr>
+            <th>No. of Notes to Return</th>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+                <td class="no-of-notes"></td>
+            </tr>            
+        </table>
+        <p class="recipt"></p>
+    </div>
+    <div style="margin-left:40%"><small>View this Project on <a href="https://github.com/Xitija/Cash-Register">Github</a></small></div>
+</body>
+<script src="app.js"></script>
+</html>
